@@ -1,0 +1,13 @@
+name = "elnine-api"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+[vars]
+# Opcional: si lo definís, todas las rutas /v1/* piden el header  X-API-Key: <valor>
+# (mejor cargarlo como secreto:  npx wrangler secret put API_KEY )
+# API_KEY = ""
+
+# Páginas de elnine.com.ar a leer (ajustalas si el sitio cambia sus rutas)
+ELNINE_BASE = "https://elnine.com.ar"
+# ELNINE_ANUAL_URL = "https://elnine.com.ar/..."   # página con la tabla anual
+# ELNINE_PROMEDIOS_URL = "https://elnine.com.ar/..."
